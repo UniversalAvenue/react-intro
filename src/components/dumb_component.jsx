@@ -1,8 +1,8 @@
 import React from 'react';
-const App = (props) => {
+const DumbComponent = (props) => {
   return (
     <h1>{props.title}</h1>
   );
 };
 
-export default App;
+export default DumbComponent;
