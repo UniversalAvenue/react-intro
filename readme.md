@@ -5,15 +5,13 @@ Uses [webpack](https://webpack.github.io/docs/configuration.htm) and [babel](htt
 ## Setting up
 Simply clone the repo, `git clone https://github.com/UniversalAvenue/react-intro.git` make sure you have [npm installed](https://www.npmjs.com/) and run npm install
 
-Also make sure you run `npm run start` to make sure you have the javascript bundle ready for use.
+Also make sure you run `npm run start` to start the dev server.
 
 And then `open http://localhost:3000`
 
-## Working with the example
-Simply open the `index.html` file in your browser.
-
-## Making changes
-After having made changes make sure you re-build the bundle with `npm run watch`
+As you make changes, the dev server will rebuild the javascript and hot reload
+the page. (Do note that this won't work with all changes! Especially not changes
+to the root of the application)
 
 ## Going further
 Some ideas to add to this to make it more interesting
@@ -38,4 +36,4 @@ Hop on to sthlm react js slack channel, you can sign up [here](https://docs.goog
 
 ## Credits
 
-Basic configuration copied straight from https://github.com/gaearon/react-hot-boilerplate
+Basic configuration copied straight from [react-hot-boilerplate](https://github.com/gaearon/react-hot-boilerplate)
