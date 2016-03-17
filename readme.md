@@ -5,7 +5,9 @@ Uses [webpack](https://webpack.github.io/docs/configuration.htm) and [babel](htt
 ## Setting up
 Simply clone the repo, `git clone https://github.com/UniversalAvenue/react-intro.git` make sure you have [npm installed](https://www.npmjs.com/) and run npm install
 
-Also make sure you run `npm run watch` to make sure you have the javascript bundle ready for use.
+Also make sure you run `npm run start` to make sure you have the javascript bundle ready for use.
+
+And then `open http://localhost:3000`
 
 ## Working with the example
 Simply open the `index.html` file in your browser.
