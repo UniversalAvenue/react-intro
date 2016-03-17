@@ -3,7 +3,9 @@ A small starting point for experimenting with react.
 Uses [webpack](https://webpack.github.io/docs/configuration.htm) and [babel](https://babeljs.io/)
 
 ## Setting up
-Simply clone the repo, make sure you have npm installed and run npm install
+Simply clone the repo, `git clone https://github.com/UniversalAvenue/react-intro.git` make sure you have [npm installed](https://www.npmjs.com/) and run npm install
+
+Also make sure you run `npm run watch` to make sure you have the javascript bundle ready for use.
 
 ## Working with the example
 Simply open the `index.html` file in your browser.
