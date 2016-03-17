@@ -1,37 +1,26 @@
-var webpack = require('webpack');
 var path = require('path');
+var webpack = require('webpack');
 
-var files = {
-  dest: 'build/',
-  src: 'src/',
-  bundleName: 'bundle.js'
-
-};
-
-var settings = {
-  entry: {
-    app: path.join(__dirname, files.src),
-  },
+module.exports = {
+  devtool: 'eval',
+  entry: [
+    'webpack-dev-server/client?http://localhost:3000',
+    'webpack/hot/only-dev-server',
+    './src/index'
+  ],
   output: {
-    path: path.join(__dirname, files.dest),
-    filename: files.bundleName,
+    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js',
+    publicPath: '/static/'
   },
   plugins: [
-		new webpack.DefinePlugin({
-      "process.env": {
-        'API_BASE_PATH': JSON.stringify(process.env.API_BASE_PATH),
-        'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-      }
-    })
-	],
+    new webpack.HotModuleReplacementPlugin()
+  ],
   module: {
-    loaders: [
-      {test: /\.jsx?$/, exclude: /node_modules/, loader: 'babel-loader'}
-    ],
-  },
-  resolve: {
-    extensions: ["", ".js", ".jsx"]
+    loaders: [{
+      test: /\.js$/,
+      loaders: ['react-hot', 'babel'],
+      include: path.join(__dirname, 'src')
+    }]
   }
 };
-
-module.exports = settings;
