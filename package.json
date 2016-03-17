@@ -4,8 +4,8 @@
   "description": "Small react intro",
   "main": "index.js",
   "scripts": {
-    "watch": "./node_modules/webpack/bin/webpack.js -d --watch --devtool eval",
-    "postinstall": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p"
+    "start": "node server.js",
+    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p"
   },
   "keywords": [],
   "author": "Universal Avenue",
