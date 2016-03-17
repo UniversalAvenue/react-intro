@@ -15,8 +15,11 @@ After having made changes make sure you re-build the bundle with `npm run watch`
 
 ## Going further
 Some ideas to add to this to make it more interesting
+
 1. Add ability to add custom list item text
+
 2. Experiment with a flux implementation to handle actions / have a centralized state
+
 3. Add ability to remove a list item
 
 ## Further reading
