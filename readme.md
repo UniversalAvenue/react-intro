@@ -33,3 +33,7 @@ Some ideas to add to this to make it more interesting
 
 ## Getting help
 Hop on to sthlm react js slack channel, you can sign up [here](https://docs.google.com/forms/d/1iZQ_pNHu86aa_U9gLw-mNG5edAjmnYYDeqRtiRM_wHo/viewform)
+
+## Credits
+
+Basic configuration copied straight from https://github.com/gaearon/react-hot-boilerplate
