@@ -1,9 +1,9 @@
 'use strict';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SmartComponent from './components/smart_component';
+import App from './app';
 
 ReactDOM.render(
-    <SmartComponent/>,
+    <App/>,
   document.getElementById('starting-point')
 );
